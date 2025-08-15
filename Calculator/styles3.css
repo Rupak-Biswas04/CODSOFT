@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 242, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(68, 138, 230);
+    color: white;
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
+}
+
+h1 {
+    margin-left: 35%;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+#calculator {
+    background-color: rgb(214, 232, 254);
+    width: 350px;
+    height: 570px;
+    border-radius: 15px;
+    margin-top: 80px;
+    border: none;
+    box-shadow: 0 0 10px 5px gray;
+}
+
+#display {
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: inset 1px 1px 10px rgb(106, 156, 220);
+}
+
+.disp {
+    color: rgb(0, 0, 150);
+    width: 100%;
+    height: 40px;
+    padding: 10px;;
+    font-size: 60px;
+    font-weight: 550;
+    text-align: end;
+} 
+
+.exp {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 25px;
+    visibility: hidden;
+}
+
+#calcBody {
+    background-color: rgb(180, 214, 255);
+    width: 100%;
+    height: 400px;
+    padding: 40px 20px;
+    border-radius: 30px 30px 15px 15px;
+    box-shadow: inset 0 5px 8px rgb(118, 170, 238);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    background-color:rgb(194, 214, 239);
+    width: 65px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgb(96, 151, 223), -2px -2px 5px 1px white; 
+    cursor: pointer;
+}
+
+.equalsTo {
+    background-color:rgb(255, 68, 0);
+    grid-row: span 2;
+    height: auto;
+}
+
+.btn:hover {
+    background-color: rgb(134, 173, 224);
+    color: blue;
+    transform: scale(1.15);
+}
+
+.equalsTo:hover {
+    background-color: coral;
+    color: black;
+    transform: scale(1);
+}
+
+.dark {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
